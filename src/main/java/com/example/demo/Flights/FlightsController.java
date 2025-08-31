@@ -21,6 +21,7 @@ public class FlightsController {
 
     @GetMapping
     public List<Flights> getFlights(Integer flightNumber){
+        System.out.println("Fetching flights with flight number: " + flightNumber);
         return flightService.getAllFlights();
     }
 
